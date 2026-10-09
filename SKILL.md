@@ -1,5 +1,5 @@
 ---
-name: digging-agent
+name: digging-agent-crude
 description: A digging agent for journalists. Reads three editorial context files (beat-notes, source-list, output-format) and produces a daily digest of monitoring, gathering, and triage tasks tailored to the journalist's beat. Use when asked for a digest, beat scan, source check, document triage, or any patient information work.
 ---
 
