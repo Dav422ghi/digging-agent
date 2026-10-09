@@ -1,89 +1,65 @@
-# Source list
-
-> This file is your editorial position on whose work to trust, whose to read sceptically, and whose to treat as noise. The agent uses it to weight what it surfaces and to flag confidence levels.
+Source list
+> This file is my editorial position on whose work to trust, whose to read sceptically, and whose to treat as noise. The agent uses it to weight what it surfaces and to flag confidence.
 >
-> The richer this file, the better the agent's triage. Add to it as you build your beat.
-
+> **Access note:** I have no paid logins. Sources marked **[headline only]** can only be read at headline or snippet level. Never describe their content beyond what is visible. URLs have not been tested, so check them on the first run.
 ---
-
-## Tier 1 — Trusted
-
-*Sources you treat as reliable on first read. The agent can cite them without strong caveats. Specialist publications, peer-reviewed journals, named beat reporters whose work you respect, primary sources (government data, official reports).*
-
-**Example:**
-
-**Specialist publications**
-- Health Service Journal (HSJ) — reliable on NHS operations, workforce, finance
-- Pulse — reliable on GP-side stories
-- Pharmaceutical Journal — reliable on community pharmacy and dispensing
-
-**Beat reporters (any outlet)**
-- Denis Campbell (Guardian) — health policy
-- Eleanor Hayward (Times) — NHS, social care
-- Hugh Pym (BBC) — health editor
-- Andrew Gregory (Guardian) — health, science
-
-**Primary sources**
-- NHS England operational stats and workforce data
-- ONS health surveys
-- NICE consultation pages and committee minutes
-- DHSC published guidance and policy papers
-- Peer-reviewed journals: Lancet, BMJ, NEJM, JAMA
-
-**Think tanks I trust on health policy**
-- Nuffield Trust
-- The King's Fund
-- Health Foundation
-- IFS (on health spending)
-
+Tier 1: Trusted
+Primary sources (full text)
+OPEC: press releases, meeting outcomes, Monthly Oil Market Report (opec.org)
+IEA: Oil Market Report summary and news (iea.org)
+US EIA: Weekly Petroleum Status Report, Short-Term Energy Outlook, Today in Energy, daily Brent and WTI spot prices (eia.gov)
+US DOE: Strategic Petroleum Reserve announcements (energy.gov)
+US Treasury OFAC recent actions, for sanctions (home.treasury.gov)
+Baker Hughes rig count (rigcount.bakerhughes.com)
+CFTC Commitments of Traders (cftc.gov)
+SEC EDGAR filings for watchlist companies (sec.gov/edgar)
+Company investor relations pages and exchange announcements: ExxonMobil, Chevron, Shell, BP, TotalEnergies, Eni, Equinor, ConocoPhillips, Occidental, EOG, Devon, APA, Petrobras, CNOOC, PetroChina, Sinopec
+Producer government and national oil company statements: Saudi Aramco (including official selling prices), ADNOC, Iraq Oil Ministry and SOMO, Kuwait, Libya NOC, NNPC, PDVSA, Russian Energy Ministry, Rosneft and Transneft
+Refiner announcements: Valero, Marathon Petroleum, Phillips 66, Reliance
+News wires and specialist press
+Reuters Commodities and Energy (reuters.com): reliable and fast; some items metered, so treat as [headline only] if blocked
+Bloomberg Oil [headline only]
+Financial Times Energy and Commodities [headline only]
+Wall Street Journal Markets and Energy [headline only]
+Argus Media [headline only, some free items]: crude grades, official selling prices, refining margins
+S&P Global Commodity Insights and Platts [headline only, some free items]: benchmark assessments, including Dubai
+Energy Intelligence [headline only]
+Middle East Economic Survey (MEES) [headline only]: Gulf and OPEC politics
+Named analysts and banks
+Not directly accessible. Report their views only when quoted in a readable source, attributed to that source.
 ---
-
-## Tier 2 — Read with care
-
-*Sources worth reading but where you check claims independently. Could be partisan, agenda-driven, or just inconsistent. Useful for tip-offs, not for direct citation.*
-
-**Example:**
-- Industry trade press (PMLive, Pharmaphorum) — useful for pharma signals, but read for industry framing
-- Royal College press releases — reliable but always advocating
-- Patient advocacy groups — useful for case studies, but check funding sources
-- Politico's London Influence health section — well-sourced but rumour-heavy
-- Most national-paper health coverage outside the named reporters above
-
+Tier 2: Read with care
+OilPrice.com: fast, but variable editorial weight; verify before citing
+Rigzone, World Oil, Oil & Gas Journal, Hart Energy: useful for context and company news; check against primary sources
+Offshore Energy (offshore-energy.biz): only for stories that affect crude supply
+Producer-government statements about their own output, sanctions or export policies: primary, but advocacy; cross-check with independent data
+Bank and analyst forecasts reported second-hand: useful as sentiment, not as fact
+Social media accounts of tanker trackers and traders: tip-offs only, never a citation
 ---
-
-## Tier 3 — Noise / sceptical
-
-*Sources to discount or ignore. The agent should not surface stories from these unless multiple Tier 1 sources have picked them up.*
-
-**Example:**
-- Tabloid health "miracle cure" stories
-- Press releases from supplement companies, private clinics, and consumer health brands
-- Wellness influencers on social media
-- Partisan think tanks running campaigns rather than analysis
-- AI-generated content farms
-- [Any specific sites you want explicitly filtered]
-
+Tier 3: Noise / sceptical
+Price-prediction and "oil to $X" content with no new information
+Stock-tip, trading-signal and crypto-adjacent sites
+Sponsored content and company marketing
+AI-generated content farms and anonymous aggregator sites
+Single-source rumours about attacks, closures or outages circulating on social media
+Upstream (my own publication): do not use
+If a Tier 3 source is the only one carrying a story, flag it as: "Currently only reported by [source], not yet picked up by trusted outlets. Monitor."
 ---
-
-## Sources I want monitored daily
-
-*A short list of URLs, RSS feeds, or named writers the agent should always check, in priority order. The daily prompt will use this.*
-
-**Example:**
-1. https://www.hsj.co.uk/news (Tier 1)
-2. https://www.england.nhs.uk/news/ (primary)
-3. https://www.gov.uk/government/organisations/department-of-health-and-social-care (primary)
-4. https://www.nice.org.uk/news (primary)
-5. The latest Denis Campbell columns (Guardian)
-6. The latest HSJ workforce coverage
-
+Sources I want monitored daily
+In priority order:
+OPEC press page (opec.org) (primary)
+US EIA: spot prices and weekly petroleum data on release days (eia.gov) (primary)
+IEA news (iea.org) (primary)
+US Treasury OFAC recent actions (home.treasury.gov) (primary)
+Reuters Commodities and Energy (reuters.com)
+Saudi Aramco, ADNOC and other producer announcements (primary)
+Investor relations and exchange announcements for the watchlist (primary)
+Headlines from Bloomberg, FT, WSJ, Argus, Platts, Energy Intelligence and MEES [headline only]
+OilPrice.com, Rigzone, World Oil (context)
 ---
-
-## How I want sources flagged in output
-
-*A note for the agent on attribution style. The agent will follow this.*
-
-**Example:**
-- Tier 1 sources: cite by name without caveat. *"HSJ reports..."*, *"NHS England's latest workforce data shows..."*
-- Tier 2 sources: cite with attribution context. *"According to a Politico London Influence item (which is well-sourced but typically rumour-heavy)..."*
-- Tier 3 sources: do not cite. If a Tier 3 source is the only one carrying a story, flag it as: *"Currently only reported by [source], not yet picked up by trusted outlets — monitor."*
+How I want sources flagged in output
+Tier 1 primary sources: cite by name without caveat. "OPEC's statement says...", "EIA data show..."
+Tier 1 [headline only] sources: cite the headline, label it [headline only], and don't describe the article's contents.
+Tier 2 sources: cite with attribution context. "According to OilPrice.com (fast but variable)..."
+Tier 3 sources: don't cite. Use the single-source flag above.
+Any top item that rests only on a headline-only source: mark it [unconfirmed] unless matched to a free or primary source.
